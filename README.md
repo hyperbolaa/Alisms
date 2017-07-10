@@ -16,6 +16,7 @@
 #### app代码使用
     $alisms = app('alisms.yun');
     //$alisms = app('alisms.api');
+    //$alisms = app('alisms.market');
     $flag = $alisms->send('register',12345678911,['code'=>'456789']);
 
     if($flag === true){
@@ -24,10 +25,12 @@
     
 ## 备注【阿里有两个短信API】
     
-[短信服务接口文档](https://help.aliyun.com/document_detail/44364.html?spm=5176.doc44368.6.567.0pKIZb)
+alisms.yun => [阿里云短信服务接口文档](https://help.aliyun.com/document_detail/44364.html?spm=5176.doc44368.6.567.0pKIZb)
 
-[云市场短信接口文档](https://market.aliyun.com/products/57002003/cmapi011900.html?spm=5176.100239.blogcont59928.22.lumd22#sku=postpay)
+alisms.api => [云市场短信接口文档](https://market.aliyun.com/products/57002003/cmapi011900.html?spm=5176.100239.blogcont59928.22.lumd22#sku=postpay)
      
+alisms.note => [短信发送API接口文档](https://help.aliyun.com/document_detail/55451.html?spm=5176.doc56189.6.555.va0ALg)  
+    
     
 ## 联系&打赏 ##
 

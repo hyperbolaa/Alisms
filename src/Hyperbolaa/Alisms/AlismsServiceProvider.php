@@ -46,20 +46,29 @@ class AlismsServiceProvider extends ServiceProvider
 		$this->app->bind('alisms.yun', function ($app)
 		{
 			$alisms = new Sdk\SmsYun();
-			$alisms->setAccessKeyId($app->config->get('alisms.access_key_id'))
-				->setAccessKeySecret($app->config->get('alisms.access_key_secret'))
-				->setCommonSignName($app->config->get('alisms.common_sign_name'))
-				->setSpreadSignName($app->config->get('alisms.spread_sign_name'))
-				->setTemplateCode($app->config->get('alisms.template_code'));
+			$alisms->setAccessKeyId($app->config->get('alisms.yun.access_key_id'))
+				->setAccessKeySecret($app->config->get('alisms.yun.access_key_secret'))
+				->setCommonSignName($app->config->get('alisms.yun.common_sign_name'))
+				->setSpreadSignName($app->config->get('alisms.yun.spread_sign_name'))
+				->setTemplateCode($app->config->get('alisms.yun.template_code'));
 			return $alisms;
 		});
 		$this->app->bind('alisms.api', function ($app)
 		{
 			$alisms = new Sdk\SmsApi();
-			$alisms->setAppKey($app->config->get('alisms.api_app_key'))
-				->setAppSecret($app->config->get('alisms.api_app_secret'))
-				->setSignName($app->config->get('alisms.api_sign_name'))
-				->setTemplateCode($app->config->get('alisms.api_template_code'));
+			$alisms->setAppKey($app->config->get('alisms.api.api_app_key'))
+				->setAppSecret($app->config->get('alisms.api.api_app_secret'))
+				->setSignName($app->config->get('alisms.api.api_sign_name'))
+				->setTemplateCode($app->config->get('alisms.api.api_template_code'));
+			return $alisms;
+		});
+		$this->app->bind('alisms.note', function ($app)
+		{
+			$alisms = new Sdk\SmsNote();
+			$alisms->setAccessKeyId($app->config->get('alisms.note.api_app_key'))
+				->setAccessKeySecret($app->config->get('alisms.note.api_app_secret'))
+				->setCommonSignName($app->config->get('alisms.note.api_sign_name'))
+				->setTemplateCode($app->config->get('alisms.note.api_template_code'));
 			return $alisms;
 		});
 	}
@@ -74,6 +83,7 @@ class AlismsServiceProvider extends ServiceProvider
         return [
             'alisms.yun',
             'alisms.api',
+            'alisms.note',
         ];
     }
 }

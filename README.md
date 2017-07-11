@@ -38,7 +38,7 @@
         ]
     ],
     
-## 备注【阿里有两个短信API】
+## 开发文档
     
 alisms.yun => [阿里云短信服务接口文档](https://help.aliyun.com/document_detail/44364.html?spm=5176.doc44368.6.567.0pKIZb)
 

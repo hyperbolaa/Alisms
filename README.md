@@ -5,8 +5,6 @@
     开发版
     composer require  hyperbolaa/alisms dev-master
 
-    稳定版
-    composer require hyperbolaa/alisms:1.0
     
 #### laravel 配置
      'providers' => [

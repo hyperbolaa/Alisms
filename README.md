@@ -26,15 +26,15 @@
  
     
 #### 配置说明
-    	'yun'=>[//阿里云短信
-    		'access_key_id'        => 'xxxxxx',//
-    		'access_key_secret'    => 'xxxxxx',//
-    		'common_sign_name'     => '支付宝',//普通模板签名
-    		'spread_sign_name'     => '支付宝',//推广模板签名
-    		'template_code'        => [
-    			'register' => 'SMS_35650882',//模板名让一个变量来替换
-    		]
-    	],
+    'yun'=>[//阿里云短信
+        'access_key_id'        => 'xxxxxx',//
+        'access_key_secret'    => 'xxxxxx',//
+        'common_sign_name'     => '支付宝',//普通模板签名
+        'spread_sign_name'     => '支付宝',//推广模板签名
+        'template_code'        => [
+            'register' => 'SMS_35650882',//模板名让一个变量来替换
+        ]
+    ],
     
 ## 备注【阿里有两个短信API】
     

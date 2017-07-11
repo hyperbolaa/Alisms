@@ -1,6 +1,7 @@
 ## 阿里短信
-
-## 安装
+    支持阿里云的三种API短信方式，也许是目前最全的阿里云短信SDK！
+    
+#### 安装
     composer require  hyperbolaa/alisms dev-master
     
 #### laravel 配置
@@ -16,12 +17,24 @@
 #### app代码使用
     $alisms = app('alisms.yun');
     //$alisms = app('alisms.api');
-    //$alisms = app('alisms.note');//调试中
-    $flag = $alisms->send('register',12345678911,['code'=>'456789']);
-
+    //$alisms = app('alisms.note');
+    $flag = $alisms->send('register','15588888888',['code'=>'456789']);//code 为模板中的变量名
+    
     if($flag === true){
         //todo 发送成功处理
     }
+ 
+    
+#### 配置说明
+    	'yun'=>[//阿里云短信
+    		'access_key_id'        => 'xxxxxx',//
+    		'access_key_secret'    => 'xxxxxx',//
+    		'common_sign_name'     => '支付宝',//普通模板签名
+    		'spread_sign_name'     => '支付宝',//推广模板签名
+    		'template_code'        => [
+    			'register' => 'SMS_35650882',//模板名让一个变量来替换
+    		]
+    	],
     
 ## 备注【阿里有两个短信API】
     

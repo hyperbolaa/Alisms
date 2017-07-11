@@ -18,7 +18,7 @@
  * under the License.
  */
 
-
+namespace Hyperbolaa\Alisms\Core\Regions;
 
 class Endpoint
 {

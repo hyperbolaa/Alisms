@@ -19,6 +19,11 @@
  */
 namespace Hyperbolaa\Alisms\Core;
 
+use Hyperbolaa\Alisms\Core\Regions\EndpointProvider;
+use Hyperbolaa\Alisms\Core\Exception\ClientException;
+use Hyperbolaa\Alisms\Core\Exception\ServerException;
+use Hyperbolaa\Alisms\Core\Http\HttpHelper;
+
 class DefaultAcsClient implements IAcsClient 
 {    
     public $iClientProfile;

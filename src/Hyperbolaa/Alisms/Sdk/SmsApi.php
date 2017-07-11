@@ -17,31 +17,6 @@ class SmsApi
 	private $sign_name;
 	private $template_code;
 
-	public function setAppKey($value)
-	{
-		$this->app_key = $value;
-		return $this;
-	}
-
-	public function setAppSecret($value)
-	{
-		$this->app_secret = $value;
-		return $this;
-	}
-
-	public function setSignName($value)
-	{
-		$this->sign_name = $value;
-		return $this;
-	}
-
-
-	public function setTemplateCode($value)
-	{
-		$this->template_code = $value;
-		return $this;
-	}
-
 	/**
 	 * 云市场短信发送----接口2---功能少些许
 	 * @param $tpl
@@ -137,5 +112,29 @@ class SmsApi
 		return $ret;
 	}
 
+	public function setAppKey($value)
+	{
+		$this->app_key = $value;
+		return $this;
+	}
+
+	public function setAppSecret($value)
+	{
+		$this->app_secret = $value;
+		return $this;
+	}
+
+	public function setSignName($value)
+	{
+		$this->sign_name = $value;
+		return $this;
+	}
+
+
+	public function setTemplateCode($value)
+	{
+		$this->template_code = $value;
+		return $this;
+	}
 
 }

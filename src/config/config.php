@@ -24,5 +24,8 @@ return [
 		'template_code'        => [
 			'register' => 'SMS_35650882',//模板code让一个变量来替换
 		],
+		'enable_http_proxy'     => false,//是否开始代理
+		'http_proxy_ip'         => '127.0.0.1',
+		'http_proxy_port'       => '8888'
 	]
 ];

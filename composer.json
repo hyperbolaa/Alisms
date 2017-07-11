@@ -1,8 +1,8 @@
 {
   "name": "hyperbolaa/alisms",
   "type": "project",
-  "description": "阿里大鱼短信，阿里短信在laravle5中的封装",
-  "keywords": ["阿里","大鱼","短信","阿里短信", "Laravel5", "Laravel5.2"],
+  "description": "最全的阿里短信接口，基于Laravel5的封装",
+  "keywords": ["阿里","阿里云","短信","阿里云短信","Laravel","Laravel5"],
   "homepage": "https://github.com/hyperbolaa/Alisms",
   "license": "MIT",
   "authors": [

@@ -16,7 +16,7 @@
 #### app代码使用
     $alisms = app('alisms.yun');
     //$alisms = app('alisms.api');
-    //$alisms = app('alisms.market');
+    //$alisms = app('alisms.note');//调试中
     $flag = $alisms->send('register',12345678911,['code'=>'456789']);
 
     if($flag === true){

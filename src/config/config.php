@@ -23,6 +23,6 @@ return [
 		'common_sign_name'     => '支付宝',//普通模板签名
 		'template_code'        => [
 			'register' => 'SMS_35650882',//模板code让一个变量来替换
-		]
+		],
 	]
 ];

@@ -65,10 +65,10 @@ class AlismsServiceProvider extends ServiceProvider
 		$this->app->bind('alisms.note', function ($app)
 		{
 			$alisms = new Sdk\SmsNote();
-			$alisms->setAccessKeyId($app->config->get('alisms.note.api_app_key'))
-				->setAccessKeySecret($app->config->get('alisms.note.api_app_secret'))
-				->setCommonSignName($app->config->get('alisms.note.api_sign_name'))
-				->setTemplateCode($app->config->get('alisms.note.api_template_code'));
+			$alisms->setAccessKeyId($app->config->get('alisms.note.access_key_id'))
+				->setAccessKeySecret($app->config->get('alisms.note.access_key_secret'))
+				->setCommonSignName($app->config->get('alisms.note.common_sign_name'))
+				->setTemplateCode($app->config->get('alisms.note.template_code'));
 			return $alisms;
 		});
 	}

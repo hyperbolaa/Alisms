@@ -53,7 +53,7 @@ class Helper
 				}
 			}
 		}
-		return json_encode($return);
+		return $return ? json_encode($return) : '{}';
 	}
 
 
